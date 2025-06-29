@@ -11,9 +11,7 @@ export default defineConfig({
     vueDevTools(),
   ],
   base: './',
-  build: {
-    outDir: 'dist-test'  // ← tambahkan baris ini
-  },
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
