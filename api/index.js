@@ -46,4 +46,3 @@ app.delete('/api/products/:id', async (c) => {
 app.get('*', (c) => c.env.ASSETS.fetch(c.req.raw));
 
 export default app;
-
