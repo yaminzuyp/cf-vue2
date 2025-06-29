@@ -1,11 +1,18 @@
 {
   "name": "cf-vue2",
   "compatibility_date": "2024-12-30",
-  "build": {
-    "command": "npm run build"
-  },
   "assets": {
+    "binding": "ASSETS",
     "directory": "./dist",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "main": "./api/index.js",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cf-vue2",
+      "database_id": "ffd42e63-ca23-4243-8757-bbd6b5ddcd42",
+      "migrations_dir": "./migrations"
+    }
+  ]
 }
